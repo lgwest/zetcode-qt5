@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1.0)
+cmake_minimum_required(VERSION 3.14)
 
 project(helloworld)
 
@@ -12,4 +12,6 @@ endif()
 
 find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
 
-add_subdirectory(1-intro)
+add_subdirectory(src/01-intro)
+add_subdirectory(src/02-strings)
+
