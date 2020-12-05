@@ -1,0 +1,20 @@
+macro(add_exe name)
+	set(prefix 04-containers)
+	add_executable(${prefix}-${name} ${name}.cpp)
+	target_link_libraries(${prefix}-${name} Qt5::Core)
+endmacro()
+
+macro(addn_exe name)
+	# name of exe is equal to  prefix + name of first soure file without extension
+	set(prefix 04-containers)
+	get_filename_component(name_noext ${name} NAME_WE)
+	add_executable(${prefix}-${name_noext}  ${ARGV})
+	target_link_libraries(${prefix}-${name_noext} Qt5::Core)
+endmacro()
+
+add_exe(01-myvector)
+add_exe(02-mylist)
+add_exe(03-mystringlist)
+add_exe(04-myset)
+add_exe(05-myqmap)
+addn_exe(06-sortcustomclass.cpp book.cpp book.h)

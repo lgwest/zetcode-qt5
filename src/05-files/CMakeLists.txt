@@ -1,0 +1,27 @@
+macro(add_exe name)
+	set(prefix 05-files)
+	add_executable(${prefix}-${name} ${name}.cpp)
+	target_link_libraries(${prefix}-${name} Qt5::Core)
+endmacro()
+
+macro(addn_exe name)
+	# name of exe is equal to  prefix + name of first soure file without extension
+	set(prefix 05-files)
+	get_filename_component(name_noext ${name} NAME_WE)
+	add_executable(${prefix}-${name_noext}  ${ARGV})
+	target_link_libraries(${prefix}-${name_noext} Qt5::Core)
+endmacro()
+
+add_exe(01-file_size)
+add_exe(02-read_file)
+add_exe(03-write2file)
+add_exe(04-copy_file)
+add_exe(05-owner)
+add_exe(06-file_times)
+add_exe(07-dirs)
+add_exe(08-special_paths)
+add_exe(09-file_path)
+add_exe(10-permissions)
+add_exe(11-list_dir)
+
+file(COPY colours DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
