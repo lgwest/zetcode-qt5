@@ -9,7 +9,7 @@ macro(add_exe name)
 	string(REPLACE " " "_" prefix ${prefix})
 	# remove extension of first source file
 	get_filename_component(name_noext ${name} NAME_WE)
-	# put together name of executable, name is equal to first, and sometimes the only, element in ${ARGV}
+	# put together name of executable, name is equal to the first, and sometimes the only, element in ${ARGV}
 	add_executable(${prefix}-${name_noext} ${ARGV})
 	target_link_libraries(${prefix}-${name_noext} Qt5::Core Qt5::Gui Qt5::Widgets)
 endmacro()
