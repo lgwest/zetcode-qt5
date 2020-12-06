@@ -1,0 +1,7 @@
+add_exe(1-absolute.cpp)
+add_exe(2-main-verticalbox.cpp verticalbox.cpp verticalbox.h)
+add_exe(3-main-buttons.cpp buttons.cpp buttons.h)
+add_exe(4-main-nesting.cpp nesting.cpp nesting.h)
+add_exe(5-main-form.cpp form.cpp form.h)
+add_exe(6-main-calculator.cpp calculator.cpp calculator.h)
+add_exe(7-main-review.cpp review.cpp review.h)
