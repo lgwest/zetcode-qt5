@@ -33,5 +33,6 @@ find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
 #add_subdirectory(src/07-menusandtoolbars)
 #add_subdirectory(src/08-layout)
 #add_subdirectory(src/09-eventsandsignals)
-add_subdirectory(src/10-widgets)
+#add_subdirectory(src/10-widgets)
+add_subdirectory(src/11-widgets2)
 
