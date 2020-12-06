@@ -1,0 +1,5 @@
+add_exe(1-main-click.cpp click.cpp click.h)
+add_exe(2-main-keypress.cpp keypress.cpp keypress.h)
+add_exe(3-main-move.cpp move.cpp move.h)
+add_exe(4-main-disconnect.cpp disconnect.cpp disconnect.h)
+add_exe(5-main-timer.cpp timer.cpp timer.h)
